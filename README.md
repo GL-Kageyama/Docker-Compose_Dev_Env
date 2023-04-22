@@ -10,9 +10,9 @@ In this repository, we have a LocalStack that can emulate AWS and a Docker for P
 Please add a Docker for your favorite application to build a local environment for cloud development.  
 
 ## Procedure
-1, Launcher Desktop install  
-   https://rancherdesktop.io/  
+1, Launcher Desktop install : https://rancherdesktop.io/   
 2, docker-compose build  
+3, docker-compose up  
 
 ## Command Memo
 ### Docker Compose Command Memo
