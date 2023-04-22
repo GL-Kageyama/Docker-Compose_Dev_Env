@@ -18,6 +18,9 @@ $ docker-compose stop
 $ docker-compose down  
 
 ### LocalStack(AWS) Command Memo
+$ brew install awscli  
+$ export AWS_ACCESS_KEY_ID=dummy  
+$ export AWS_SECRET_ACCESS_KEY=dummy  
 $ aws s3 mb s3://local-backet --endpoint-url=http://localhost:4566  
 $ aws s3 cp TEST.txt s3://local-backet/test/ --endpoint-url=http://localhost:4566  
 $ aws s3 ls s3://local-backet/test/ --endpoint-url=http://localhost:4566  
