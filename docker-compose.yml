@@ -1,5 +1,5 @@
 services:
-  # Java:
+  # Go, Java, etc.
 
   localstack:
     image: localstack/localstack
@@ -10,6 +10,10 @@ services:
       SERVICES: s3
       DATA_DIR: /tmp/localstack/data
       DEBUG: 1
+  # LocalStack(AWS) Command Memo : 
+  # $ aws s3 mb s3://local-backet --endpoint-url=http://localhost:4566
+  # $ aws s3 cp TEST.txt s3://local-backet/test/ --endpoint-url=http://localhost:4566
+  # $ aws s3 ls s3://local-backet/test/ --endpoint-url=http://localhost:4566
 
   db:
     image: postgres:latest
@@ -27,3 +31,6 @@ services:
       - ./postgres-data:/var/lib/postgresql/data
     user:
       root
+  # DB Command Memo : 
+  # $ docker-compose exec db psql -U postgres
+  # $ sudo chmod 755 ./postgres-data
